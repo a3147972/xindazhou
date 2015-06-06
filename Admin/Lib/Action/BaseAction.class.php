@@ -25,17 +25,23 @@ class BaseAction extends Action{
     		$map = $this->_map();
     	}
 
-    	$page = I('page');
-    	$page_size = I('page_size');
+    	$page = I('p',1);
+    	$page_size = I('page_size',10);
 
     	$count = $model->_count($map);
     	if($count >0){
     		$list = $model->_list($map,$page,$page_size);
     	}
     	$this->assign('list',$list);
-    	$this->assign('count',$count);
 
+        $Page       = new Page($count,$page_size);// 实例化分页类 传入总记录数和每页显示的记录数
+        $show       = $Page->show();// 分页显示输出
+        $this->assign('page',$show);// 赋值分页输出
     	$this->display();
+    }
+
+    function add(){
+        $this->display();
     }
 
     /**
@@ -49,8 +55,9 @@ class BaseAction extends Action{
     	}
 
     	$insert_result = $model->add();
-    	if($inser_result){
-    		$this->success('新增成功');
+
+    	if($insert_result){
+    		$this->success('新增成功',U(MODULE_NAME.'/index'));
     	}else{
     		$this->error('新增失败');
     	}
@@ -86,7 +93,7 @@ class BaseAction extends Action{
     	$update_result = $model->where($map)->save();
 
     	if($update_result !== false){
-    		$this->success('更新成功');
+    		$this->success('更新成功',U(MODULE_NAME.'/index'));
     	}else{
     		$this->error('更新失败');
     	}
@@ -106,7 +113,7 @@ class BaseAction extends Action{
     	$update_result = $model->where($map)->save($data);
 
     	if($update_result !== false){
-    		$this->success('禁用成功');
+    		$this->success('禁用成功',U(MODULE_NAME.'/index'));
     	}else{
     		$this->error('禁用失败');
     	}
@@ -126,9 +133,27 @@ class BaseAction extends Action{
     	$update_result = $model->where($map)->save($data);
 
     	if($update_result !== false){
-    		$this->success('启用成功');
+    		$this->success('启用成功',U(MODULE_NAME.'/index'));
     	}else{
     		$this->error('启用失败');
     	}
     } 
+
+    /**
+     * 删除
+     */
+    function del(){
+        $model = D(MODULE_NAME);
+
+        $pk = $model->getPk();
+        $map[$pk] = I('get.'.$pk);
+
+        $del_result = $model->where($map)->delete();
+
+        if($del_result){
+            $this->success('删除成功',U(MODULE_NAME.'/index'));
+        }else{
+            $this->error('删除失败');
+        }
+    }
 }

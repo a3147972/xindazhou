@@ -1,2 +1,4 @@
 <?php 
-return array();
+return array(
+	'SITE_URL' =>'http://www.baidu.com',
+);

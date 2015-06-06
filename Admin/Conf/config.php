@@ -8,8 +8,8 @@ $admin_config = array(
         'PATH_JS'=>__ROOT__.'/Admin/Tpl/Public/Js',
         'PATH_IMG'=>__ROOT__.'/Admin/Tpl/Public/img',
         '__PUBLIC__'=>__ROOT__.'/Admin/Tpl//Public',
-
     ),
+    'APP_AUTOLOAD_PATH' =>'ORG.Crypt,ORG.Net,ORG.Util',
 );
 
 return array_merge($common,$admin_config);

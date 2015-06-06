@@ -19,7 +19,7 @@ function ajaxForm(dom){
 }
 
 function ajaxBtn(dom){
-	var url = $(dom).attr('url');
+	var url = $(dom).attr('href');
 	$.ajax({
 		url:url,
 		type:'get',
@@ -34,13 +34,3 @@ function ajaxBtn(dom){
 	})
 	return false;
 }
-$(function(){
-	//表单验证
-	$('.require').blur(function(){
-		var value = $(this).val();
-		if(value == ''){
-			alert('此字段不可为空');
-			return false;
-		}
-	})
-})

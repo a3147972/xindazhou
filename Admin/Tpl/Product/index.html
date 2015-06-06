@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- container-fluid -->
+    
+    <head>
+        <title>
+            后台管理系统
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <include file="Base/style" />
+    
+    <body>
+        <include file="Base/header" />
+        <include file="Base/menu" />
+        <div id="content">
+            <div id="content-header">
+                <h1>
+                    新大洲微信管理系统
+                </h1>
+            </div>
+            <div id="breadcrumb">
+                <a href="{:U('/')}" title="Go to Home" class="tip-bottom">
+                    <i class="icon-home">
+                    </i>
+                    后台首页
+                </a>
+                <a href="#" class="current">
+                    车型管理
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <a href="{:U('add',array('class'=>I('id')))}" class="btn btn-primary">新增</a>
+                        <div class="widget-box">
+
+                            <div class="widget-content nopadding">
+
+                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                                    <table class="table table-bordered data-table dataTable" id="DataTables_Table_0">
+                                        <thead>
+                                            <tr role="row">
+                                                <th class="ui-state-default" >
+                                                    <div class="DataTables_sort_wrapper">
+                                                        车型名称
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-triangle-1-n">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                                <th class="ui-state-default">
+                                                    <div class="DataTables_sort_wrapper">
+                                                        链接
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                                <th class="ui-state-default">
+                                                    <div class="DataTables_sort_wrapper">
+                                                        缩略图
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                                <th class="ui-state-default" >
+                                                    <div class="DataTables_sort_wrapper">
+                                                        发布时间
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                                <th class="ui-state-default">
+                                                    <div class="DataTables_sort_wrapper">
+                                                        修改时间
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                                <th class="ui-state-default">
+                                                    <div class="DataTables_sort_wrapper">
+                                                        操作
+                                                        <span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s">
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                            <volist name="list" id="vo">
+                                                <tr class="gradeA odd">
+                                                <td class=" sorting_1">
+                                                    {$vo.name}
+                                                </td>
+                                                <td class="">
+                                                    {:C('SITE_URL')}/ProductClass/index/id/{$vo.id}
+                                                </td>
+                                                <td class=" ">
+                                                    {$vo.create_time}
+                                                </td>
+                                                <td class=" ">
+                                                    {$vo.modification_time}
+                                                </td>
+                                                <td class="center ">
+                                                    <a href="{:U('edit',array('id'=>$vo['id']))}" >编辑</a>
+                                                    <a href="{:U('del',array('id'=>$vo['id']))}" onclick="return ajaxBtn(this)">
+                                                    删除</a>
+                                                </td>
+                                            </tr>
+                                            </volist>
+                                        </tbody>
+                                    </table>
+                                    <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+                                        <div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers"
+                                        id="DataTables_Table_0_paginate">
+                                            {$page}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file="Base/script" />
+    </body>
+
+</html>
