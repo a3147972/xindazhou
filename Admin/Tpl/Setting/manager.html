@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- container-fluid -->
+<head>
+    <title>后台管理系统</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<include file="Base/style" />
+<body>
+<include file="Base/header" />
+<include file="Base/menu" />
+<div id="style-switcher">
+    <i class="icon-arrow-left icon-white"></i>
+    <span>Style:</span>
+    <a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+    <a href="#blue" style="background-color: #2D2F57;"></a>
+    <a href="#red" style="background-color: #673232;"></a>
+</div>
+
+<div id="content">
+    <div id="content-header">
+        <h1>新大洲微信管理系统</h1>
+
+    </div>
+    <div id="breadcrumb">
+        <a href="{:U('/')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 后台首页</a>
+        <a href="#" class="current">Dashboard</a>
+    </div>
+    <div class="container-fluid">
+
+        <div class="widget-box">
+         <div class="widget-title">
+								<span class="icon">
+									<i class="icon-th"></i>
+								</span>
+                <h5> 管理员列表</h5>
+            </div>
+            <div class="widget-content nopadding">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>用户名</th>
+                        <th>创建时间</th>
+                        <th>最后登陆时间</th>
+                        <th>最后登陆IP</th>
+                        <th>最后修改时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Row 1</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>Row 4</td>
+                        <td>Row 2</td>
+                        <td>Row 3</td>
+                        <td>
+                            <button class="btn btn-primary"><i class="icon-pencil icon-white"></i> 修改</button>
+                            <button class="btn btn-danger"><i class="icon-remove icon-white"></i> 删除</button>
+                        </td>
+                    </tr>
+                   
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="{:U('Setting/managerAdd')}" class="btn btn-primary">新增</a>
+
+
+    </div>
+</div>
+<include file="Base/script" />
+</body>
+</html>
