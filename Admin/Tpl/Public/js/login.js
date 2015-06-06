@@ -4,15 +4,16 @@
 $(function(){
 
     $('.btn-inverse').click(function(){
+        alert(111);
         $.ajax({
             type:'POST',
             data:{
-                username:$('input[placeholder=Username]').val(),
-                password:$('input[placeholder=Password]').val()
+                username:$('input[name=username]').val(),
+                password:$('input[name=password]').val()
             },
             url: ThinkPHP['Login'],
             success:function(data){
-                alert(data)
+                alert(data);
             }
 
         })

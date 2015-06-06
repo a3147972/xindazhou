@@ -12,8 +12,9 @@ class LoginAction extends Action {
      * 判断登陆
      */
     public function checkLogin(){
+
          $login=D('Admin');
          $rersult=$login->checkLogin(I('username','','htmlspecialchars'),I('password','','htmlspecialchars'));
-        print_r($rersult);
+         print_r($rersult) ;
     }
 }

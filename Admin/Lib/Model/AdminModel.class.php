@@ -14,7 +14,7 @@ class AdminModel extends Model{
         //-1,'帐号长度不合法！'
         array('username', '/^[^@]{2,20}$/i', '帐号长度不合法', self::EXISTS_VALIDATE),
         //-2,'密码长度不合法！'
-        array('password', '6,30', '密码长度不合法', self::EXISTS_VALIDATE,'length'),
+        array('password', '5,30', '密码长度不合法', self::EXISTS_VALIDATE,'length'),
 
     );
     //用户表自动完成
@@ -24,13 +24,15 @@ class AdminModel extends Model{
     );
 
     //验证登陆
-    public function checkLogin($username,$password){
+    public function checkLogin($username,$username){
         $data=array(
-            'password'=>$password,
+            'password'=>$username,
             '$username'=>$username
         );
 
-        return $data;
+        if($this->create($data)){
+            return $data;
+        }
 
     }
 
