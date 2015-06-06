@@ -1,4 +1,6 @@
 <?php
 class IndexAction extends BaseAction {
-    function index(){}
+    function index(){
+        $this->display();
+    }
 }
