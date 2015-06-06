@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="PATH_CSS/unicorn.login.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
+<script>
+    var ThinkPHP = {
+        'Login' : '{:U("Login/checkLogin")}'
+    };
+</script>
 <div id="logo">
-    <img src="img/logo.png" alt="" />
+    <img src="PATH_IMG/logo.png" alt="" />
 </div>
 <div id="loginbox">
-    <form id="loginform" class="form-vertical" action="index.html" />
+    <form id="loginform"/>
     <p>请登陆后进行操作</p>
     <div class="control-group">
         <div class="controls">
@@ -34,7 +39,7 @@
         <span class="pull-right"><input type="submit" class="btn btn-inverse" value="登陆" /></span>
     </div>
     </form>
-    <form id="recoverform" action="#" class="form-vertical" />
+    <form id="recoverform" />
     <p>Enter your e-mail address below and we will send you instructions how to recover a password.</p>
     <div class="control-group">
         <div class="controls">
@@ -51,6 +56,7 @@
 </div>
 
 <script src="PATH_JS/jquery.min.js"></script>
+
 <script src="PATH_JS/login.js"></script>
 </body>
 </html>

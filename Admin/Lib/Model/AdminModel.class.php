@@ -24,7 +24,13 @@ class AdminModel extends Model{
     );
 
     //验证登陆
-    public function checkLogin(){
+    public function checkLogin($username,$password){
+        $data=array(
+            'password'=>$password,
+            '$username'=>$username
+        );
+
+        return $data;
 
     }
 
