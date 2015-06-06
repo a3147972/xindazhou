@@ -5,8 +5,8 @@ $admin_config = array(
     //自定义参数名
     'TMPL_PARSE_STRING'=>array(
         'PATH_CSS'=>__ROOT__.'/Admin/Tpl/Public/Css',
-        'PATH_JS'=>__ROOT__.'/Admin/Tpl//Public/Js',
-        'PATH_IMG'=>__ROOT__.'/Admin/Tpl//Public/Images',
+        'PATH_JS'=>__ROOT__.'/Admin/Tpl/Public/Js',
+        'PATH_IMG'=>__ROOT__.'/Admin/Tpl/Public/img',
         '__PUBLIC__'=>__ROOT__.'/Admin/Tpl//Public',
 
     ),

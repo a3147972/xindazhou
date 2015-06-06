@@ -13,5 +13,8 @@ class LoginAction extends Action {
      */
     public function checkLogin(){
 
+         $login=D('Admin');
+         $rersult=$login->checkLogin(I('username','','htmlspecialchars'),I('password','','htmlspecialchars'));
+         print_r($rersult) ;
     }
 }
