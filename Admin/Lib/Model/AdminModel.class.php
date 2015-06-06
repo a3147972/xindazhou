@@ -7,21 +7,9 @@
  * Web:http://www.ki35.com
  */ 
 
-class AdminModel extends Model{
+class AdminModel extends BaseModel{
 
-    //用户表自动验证
-    protected $_validate = array(
-        //-1,'帐号长度不合法！'
-        array('username', '/^[^@]{2,20}$/i', '帐号长度不合法', self::EXISTS_VALIDATE),
-        //-2,'密码长度不合法！'
-        array('password', '5,30', '密码长度不合法', self::EXISTS_VALIDATE,'length'),
 
-    );
-    //用户表自动完成
-    protected $_auto = array(
-        array('password', 'sha1', self::MODEL_BOTH, 'function'),
-        array('create', 'd', self::MODEL_INSERT, 'function'),
-    );
 
     //验证登陆
     public function checkLogin($username,$password){
@@ -49,6 +37,30 @@ class AdminModel extends Model{
             }
 
         }
+    }
+
+    //检查用户名是否重复
+    public function checkUser($username){
+        $map['username']=$username;
+        $id=$this->where($map)->find();
+            return $id;
+
+    }
+
+    //新增管理员
+    public function insert($data){
+            $data['create_time']=now();
+            $data['modification_time']=now();
+            $data['last_login']=now();
+            $data['status']=1;
+            $data['last_ip']=get_client_ip();
+            if($this->create()){
+                if($id=$this->data($data)->add()){
+                    return $id;
+                }else{
+                    return 0;
+                }
+            }
 
     }
 
