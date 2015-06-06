@@ -8,10 +8,10 @@ class BaseAction extends Action{
 
         //判断用户是否已登录
 
-        if (!isset($_SESSION['id'])) {
+        // if (!isset($_SESSION['id'])) {
 
-            $this->redirect('admin.php/Login/index');
-        }
+        //     $this->redirect('admin.php/Login/index');
+        // }
     }
 
 	/**
