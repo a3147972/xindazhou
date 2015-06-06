@@ -2,9 +2,7 @@
  * Created by zhibo on 15-6-6.
  */
 $(function(){
-
     $('.btn-inverse').click(function(){
-        alert(111);
         $.ajax({
             type:'POST',
             data:{
@@ -13,7 +11,11 @@ $(function(){
             },
             url: ThinkPHP['Login'],
             success:function(data){
-                alert(data);
+                if (data > 0) {
+                    location.href = ThinkPHP['INDEX'];
+                } else {
+                    alert('密码或用户名不正确');
+                }
             }
 
         })

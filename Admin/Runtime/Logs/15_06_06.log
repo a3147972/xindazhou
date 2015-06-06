@@ -133,6 +133,7 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000323s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000394s ]
 
+<<<<<<< HEAD
 [ 2015-06-06T13:15:54+08:00 ] 0.0.0.0 /xindazhou/admin.php
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001142s ]
@@ -3393,4 +3394,10 @@ INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
 NOTIC: [2] mysql_connect(): Host '192.168.1.111' is not allowed to connect to this MySQL server /Users/zhibo/sites/xindazhou/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
 ERR: Host '192.168.1.111' is not allowed to connect to this MySQL server
+=======
+[ 2015-06-06T13:07:54+08:00 ] 127.0.0.1 /xindazhou/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+>>>>>>> 60b587ca43c57ab770e752ba764d0ef26d2dfaed
 
