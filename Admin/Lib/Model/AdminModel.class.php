@@ -24,14 +24,30 @@ class AdminModel extends Model{
     );
 
     //验证登陆
-    public function checkLogin($username,$username){
+    public function checkLogin($username,$password){
         $data=array(
             'password'=>$username,
-            '$username'=>$username
+            '$username'=>$password
         );
 
         if($this->create($data)){
-            return $data;
+              $map['username']=$username;
+              $map['password']=sha1($password);
+            $login=$this->field('id,username')->where($map)->find();
+            if($login){
+                session('id', $login['id']);
+                //登录验证后写入登录信息
+                $update = array(
+                    'id'=>$login['id'],
+                    'last_login'=>now(),
+                    'last_ip'=>get_client_ip(1),
+                );
+                if($this->save($update)){
+                    return $login['id'];
+                };
+                    return 0;
+            }
+
         }
 
     }
