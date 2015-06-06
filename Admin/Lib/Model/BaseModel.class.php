@@ -38,4 +38,14 @@ class BaseModel extends Model{
 			return array();
 		return $info;
 	}
+
+	/**
+	 * 计算总数
+	 */
+	function _count($map=array()){
+		$count = $this->where($map)->count();
+		if(is_null($count))
+			return 0;
+		return $count;
+	}
 }
