@@ -51,7 +51,7 @@ class BaseAction extends Action{
     	$insert_result = $model->add();
     	if($inser_result){
     		$this->success('新增成功');
-    	}elese{
+    	}else{
     		$this->error('新增失败');
     	}
     }
