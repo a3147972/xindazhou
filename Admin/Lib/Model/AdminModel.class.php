@@ -8,9 +8,6 @@
  */ 
 
 class AdminModel extends BaseModel{
-
-
-
     //验证登陆
     public function checkLogin($username,$password){
         $data=array(

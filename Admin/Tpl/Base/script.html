@@ -6,6 +6,7 @@
 <script src="PATH_JS/unicorn.js"></script>
 <script src="PATH_JS/unicorn.dashboard.js"></script>
 <script src="PATH_JS/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/webuploader/webuploader.js"></script>
 <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
     <!-- 编辑器源码文件 -->
 <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
@@ -14,4 +15,32 @@
 		if($('#ueditor').length > 0){
 			var ue = UE.getEditor('ueditor');
 		}
+
+		var uploader = WebUploader.create({
+		    // swf文件路径
+		    swf: '__PUBLIC__/webuploader/Uploader.swf',
+		    // 文件接收服务端。
+		    server: '{:U("Base/uploadImg")}',
+		    // 选择文件的按钮。可选。
+		    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+		    pick: '#picker',
+		    // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+		    resize: false,
+		    auto: true,
+
+		    // 只允许选择图片文件。
+		    accept: {
+		        title: 'Images',
+		        extensions: 'gif,jpg,jpeg,png',
+		        mimeTypes: 'image/*'
+		    }
+		});
+
+		uploader.on( 'uploadSuccess', function( file,response) {
+			if(response.status == 1){
+				$('#uploader').siblings('input[type=text]').val(response.info);
+			}else{
+				alert(response.info);
+			}
+		});
 </script>

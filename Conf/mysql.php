@@ -1,9 +1,9 @@
 <?php 
 $site = require_once('./Conf/site.php');
 $mysql = array(
-	'DB_HOST'=>'192.168.1.111',
-	'DB_USER' => 'admin',
-	'DB_PWD' => 'admin',
+	'DB_HOST'=>'127.0.0.1',
+	'DB_USER' => 'root',
+	'DB_PWD' => '123456',
 	'DB_NAME' => 'xindazhou',
 );
 

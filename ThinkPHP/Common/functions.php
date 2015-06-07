@@ -151,6 +151,7 @@ function layout($layout) {
 function U($url='',$vars='',$suffix=true,$redirect=false,$domain=false) {
     // 解析URL
     $info   =  parse_url($url);
+
     $url    =  !empty($info['path'])?$info['path']:ACTION_NAME;
     if(isset($info['fragment'])) { // 解析锚点
         $anchor =   $info['fragment'];
@@ -161,7 +162,7 @@ function U($url='',$vars='',$suffix=true,$redirect=false,$domain=false) {
             list($anchor,$host)    =   explode('@',$anchor, 2);
         }
     }elseif(false !== strpos($url,'@')) { // 解析域名
-        list($url,$host)    =   explode('@',$info['path'], 2);
+        list($url,$host)    =   explode('@',$info['path'], 2); 
     }
     // 解析子域名
     if(isset($host)) {
@@ -191,7 +192,7 @@ function U($url='',$vars='',$suffix=true,$redirect=false,$domain=false) {
         parse_str($info['query'],$params);
         $vars = array_merge($params,$vars);
     }
-    
+
     // URL组装
     $depr = C('URL_PATHINFO_DEPR');
     if($url) {
@@ -205,12 +206,14 @@ function U($url='',$vars='',$suffix=true,$redirect=false,$domain=false) {
             if('/' != $depr) { // 安全替换
                 $url    =   str_replace('/',$depr,$url);
             }
+
             // 解析分组、模块和操作
             $url        =   trim($url,$depr);
             $path       =   explode($depr,$url);
             $var        =   array();
             $var[C('VAR_ACTION')]       =   !empty($path)?array_pop($path):ACTION_NAME;
             $var[C('VAR_MODULE')]       =   !empty($path)?array_pop($path):MODULE_NAME;
+
             if($maps = C('URL_ACTION_MAP')) {
                 if(isset($maps[strtolower($var[C('VAR_MODULE')])])) {
                     $maps    =   $maps[strtolower($var[C('VAR_MODULE')])];
@@ -250,6 +253,7 @@ function U($url='',$vars='',$suffix=true,$redirect=false,$domain=false) {
             $url   .=   '&'.$vars;
         }
     }else{ // PATHINFO模式或者兼容URL模式
+
         if(isset($route)) {
             $url    =   __APP__.'/'.rtrim($url,$depr);
         }else{

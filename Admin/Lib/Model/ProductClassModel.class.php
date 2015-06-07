@@ -1,5 +1,6 @@
 <?php 
 class ProductClassModel extends BaseModel{
+	protected $tableName = 'product_class';
 	protected $_validate = array(
 		array('name','require','车型名称不可为空',1),
 	);	

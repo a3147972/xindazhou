@@ -4,20 +4,19 @@
 $(function(){
     $('.btn-inverse').click(function(){
         $.ajax({
+            url: ThinkPHP['Login'],
             type:'POST',
             data:{
                 username:$('input[name=username]').val(),
                 password:$('input[name=password]').val()
             },
-            url: ThinkPHP['Login'],
-            success:function(data){
-                if (data > 0) {
-                    location.href = ThinkPHP['INDEX'];
+            success:function(i){
+                if (i.status == 1) {
+                    window.location.href = i.url
                 } else {
-                    alert('密码或用户名不正确');
+                    alert(i.info);
                 }
             }
-
         })
     })
 })

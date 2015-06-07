@@ -8,10 +8,9 @@ class BaseAction extends Action{
 
         //判断用户是否已登录
 
-        // if (!isset($_SESSION['id'])) {
-
-        //     $this->redirect('admin.php/Login/index');
-        // }
+        if (!isset($_SESSION['id'])) {
+            redirect(U('Login/index'));
+        }
     }
 
 	/**
@@ -81,14 +80,14 @@ class BaseAction extends Action{
      * 默认更新数据
      */
     function update(){
-    	$model = D(MODUEL_NAME);
+    	$model = D(MODULE_NAME);
 
     	if(!$model->create()){
-    		$this->error($model->_getError());
+    		$this->error($model->getError());
     	}
 
     	$pk = $model->getPk();
-    	$map[$pk] = I('get.'.$pk);
+    	$map[$pk] = I($pk);
 
     	$update_result = $model->where($map)->save();
 
@@ -113,7 +112,7 @@ class BaseAction extends Action{
     	$update_result = $model->where($map)->save($data);
 
     	if($update_result !== false){
-    		$this->success('禁用成功',U(MODULE_NAME.'/index'));
+    		$this->success('禁用成功');
     	}else{
     		$this->error('禁用失败');
     	}
@@ -133,7 +132,7 @@ class BaseAction extends Action{
     	$update_result = $model->where($map)->save($data);
 
     	if($update_result !== false){
-    		$this->success('启用成功',U(MODULE_NAME.'/index'));
+    		$this->success('启用成功');
     	}else{
     		$this->error('启用失败');
     	}
@@ -151,9 +150,31 @@ class BaseAction extends Action{
         $del_result = $model->where($map)->delete();
 
         if($del_result){
-            $this->success('删除成功',U(MODULE_NAME.'/index'));
+            $this->success('删除成功');
         }else{
             $this->error('删除失败');
         }
+    }
+
+    /**
+     * 图片上传
+     */
+    function uploadImg(){
+        import('ORG.Net.UploadFile');
+
+        $upload = new UploadFile();// 实例化上传类
+        $upload->maxSize  = 3145728 ;// 设置附件上传大小
+        $upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->savePath =  './Uploads/';// 设置附件上传目录
+
+        if(!$upload->upload()) {// 上传错误提示错误信息
+            $info['status'] = 0;
+            $info['info'] = $upload->getErrorMsg();
+        }else{// 上传成功 获取上传文件信息
+            $file = $upload->getUploadFileInfo();
+            $info['status'] = 1;
+            $info['info'] = $file[0]['savepath'].$file[0]['savename'];
+        }
+        die(json_encode($info));
     }
 }
