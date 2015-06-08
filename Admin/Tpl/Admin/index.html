@@ -46,7 +46,6 @@
                         <th>最后登陆时间</th>
                         <th>最后登陆IP</th>
                         <th>最后修改时间</th>
-                        <th>状态</th>
                         <th>操作</th>
                     </tr>
                     </thead>
@@ -60,17 +59,10 @@
                                 <td>{$data.last_ip}</td>
                                 <td>{$data.modification_time}</td>
                                 <td>
-                                    <if condition="$data['status']">
-                                        <button class="btn btn-success btn-mini">正常</button>
-                                        <else />
-                                        <button class="btn btn-danger btn-mini">停用</button>
-                                    </if>
+                                    <a href="{:U('edit',array('id'=>$vo['id']))}">修改</a>
 
-
-                                </td>
-                                <td>
-                                    <button class="btn btn-primary btn-mini"><i class="icon-pencil icon-white"></i> 修改</button>
-                                    <button class="btn btn-danger btn-mini"><i class="icon-remove icon-white"></i> 删除</button>
+                                     <a href="{:U('del',array('id'=>$vo['id']))}" onclick="return ajaxBtn(this)">
+                                                    删除</a>
                                 </td>
                             </tr>
                         </volist>
@@ -79,8 +71,6 @@
             </div>
         </div>
         <a href="{:U('Admin/add')}" class="btn btn-primary">新增</a>
-        
-
     </div>
 </div>
 <include file="Base/script" />

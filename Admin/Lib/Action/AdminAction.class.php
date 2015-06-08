@@ -1,14 +1,5 @@
 <?php 
-
 class AdminAction extends BaseAction{
-
-
-
-    //新增管理员页显示
-    public function add(){
-        $this->display();
-    }
-
     //新增管理员表单处理
     public function insert(){
 
@@ -26,5 +17,32 @@ class AdminAction extends BaseAction{
             $this->error('添加失败');
         }
     }
-	
+
+    function update(){
+        $model = D('Admin');
+        if(!$model->create()){
+            $this->error($model->getError());
+        }
+        $username = I('username');
+        $password= I('password');
+
+        if($model->checkUser($username)) $this->error('用户名已暂用');
+        
+        $map['id'] = I('id');
+        $info = $model->_get($map);
+
+        if(empty($password)){
+            $model->password = $info['password'];
+        }else{
+            $model->password = sha1($password);
+        }
+
+        $update_result = $model->where($map)->save();
+
+        if($update_result){
+            $this->success('修改成功');
+        }else{
+            $this->error('修改失败');
+        }
+    }
 }

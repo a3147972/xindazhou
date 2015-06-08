@@ -29,7 +29,7 @@
                     后台首页
                 </a>
                 <a href="#" class="current">
-                    新闻管理
+                    添加自定义菜单
                 </a>
             </div>
             <div class="container-fluid">
@@ -37,20 +37,22 @@
                     <div class="span12">
                         <div class="widget-box">
                             <div class="widget-content nopadding">
-                                <form action="{:U('insert')}" method="post" class="form-horizontal" onSubmit="return ajaxForm(this)">
+                                <form action="{:U('insert')}" method="get" class="form-horizontal" onSubmit="return ajaxForm(this)">
                                     <div class="control-group">
-                                        <label class="control-label">文章标题</label>
+                                        <label class="control-label">名称</label>
                                         <div class="controls">
-                                            <input type="text" style="" name="title">
+                                            <input type="text" style="" name="name" value="{$vo.name}">
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label">文章内容</label>
+                                        <label class="control-label">链接</label>
                                         <div class="controls">
-                                            <textarea name="content" id="ueditor"></textarea>
+                                            <input type="text" style="" name="url" value="{$vo.url}">
                                         </div>
                                     </div>
                                     <div class="form-actions">
+                                    <input type="hidden" name="id" value="{$vo.id}">
+                                    <input type="hidden" name="{:I('pid',0)}">
                                         <button type="submit" class="btn btn-primary">保存</button>
                                     </div>
                                 </form>

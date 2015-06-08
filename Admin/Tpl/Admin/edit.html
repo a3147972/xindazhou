@@ -33,14 +33,14 @@
 								<span class="icon">
 									<i class="icon-align-justify"></i>
 								</span>
-                <h5>新增管理员</h5>
+                <h5>编辑管理员</h5>
             </div>
             <div class="widget-content nopadding">
                 <form class="form-horizontal" method="post" action="{:U('Admin/insert')}">
                     <div class="control-group">
                         <label class="control-label">用户名</label>
                         <div class="controls">
-                            <input type="text" name="username">
+                            <input type="text" name="username" value="{$vo.username}">
                         </div>
                     </div>
                     <div class="control-group">
