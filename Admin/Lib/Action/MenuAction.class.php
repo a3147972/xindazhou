@@ -36,4 +36,33 @@ class MenuAction extends BaseAction{
 		}
 		return $_tree;
 	}
+
+	/**
+	 * 生成菜单
+	 */
+	function create(){
+		$options = array(
+			'token'=>C('WEIXIN_OPTIONS.TOKEN'), //填写你设定的key
+ 			'encodingaeskey'=>C('WEIXIN_OPTIONS.ENCODINGAESKEY'), //填写加密用的EncodingAESKey
+ 			'appid'=>C('WEIXIN_OPTIONS.APPID'), //填写高级调用功能的app id
+ 			'appsecret'=>C('WEIXIN_OPTIONS.APPSECRET') //填写高级调用功能的密钥
+		);
+		$wechat = new wechat($options);
+		$model = D('Menu');
+		$list = $model->_list();
+		$_list = array();
+		foreach($list as $_k=>$_v){
+			if($_v['pid'] == 0){
+				$_list[$_v['id']]['name'] = $_v['name'];
+			}else{
+				$_list[$_v['pid']]['sub_button'][$_v['id']] = array('name'=>$_v['name'],'type'=>'click','url'=>$_v['url']);
+			}
+		}
+		$create_result = $wechat->createMenu($_list);
+		if($create_result){
+			$this->success('创建自定义菜单成功,请等待24小时');
+		}else{
+			$this->error('创建失败');
+		}
+	}	
 }

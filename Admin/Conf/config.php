@@ -9,7 +9,13 @@ $admin_config = array(
         'PATH_IMG'=>__ROOT__.'/Admin/Tpl/Public/img',
         '__PUBLIC__'=>__ROOT__.'/Admin/Tpl/Public',
     ),
-    'APP_AUTOLOAD_PATH' =>'ORG.Crypt,ORG.Net,ORG.Util',
+    'APP_AUTOLOAD_PATH' =>'ORG.Crypt,ORG.Net,ORG.Util,@.ORG',
+    'WEIXIN_OPTIONS'=>array(
+    	'TOKEN' => 'R8oieC',
+    	'ENCODINGAESKEY' => 'TZQdD7KJSYLb7CXqQ3cxzQYfU0MzsbrjalVJuL19xjL',
+    	'APPID' => 'wx3f7c564306037c73',
+    	'APPSECRET' => '',
+    )
 );
 
 return array_merge($common,$admin_config);

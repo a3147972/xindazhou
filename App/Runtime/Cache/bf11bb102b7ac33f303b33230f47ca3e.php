@@ -1,9 +1,9 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html>
 <html> 
 <head> 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>{$vo.title}</title>
+    <title><?php echo ($vo["title"]); ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -42,12 +42,12 @@
          
         <div class="page-bizinfo" style="">
             <div class="header">
-            <h1 id="activity-name">{$vo.content}</h1>
+            <h1 id="activity-name"><?php echo ($vo["content"]); ?></h1>
             </div>
         </div>
        
         <div id="page-content" class="page-content" style="border-bottom: 1px solid #ccc;padding-bottom:50px;">
-            <div id="img-content">{$vo.content}</div>
+            <div id="img-content"><?php echo ($vo["content"]); ?></div>
        </div>
      
 </body>
