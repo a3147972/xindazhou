@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+新大洲本田车型
+</title><br>
+<link type="text/css" href="__PUBLIC__/css/style.css" rel="stylesheet" /></head>
+<style type="text/css">
+.site_list li a, .netWork_list li a{
+	padding: 0 0;
+}
+.site_list li, .netWork_list li {
+	width: 45%;
+}
+</style>
+<body>
+ 
+    <div class="main">
+              <h1>
+            {$info.name}</h1>
+        <h2>
+        </h2>
+        <ul class="site_list">
+            <volist name="list" id="vo">
+                <li style="font-size:20px;">
+                    <a href="{:U('Product/info',array('id'=>$vo['id']))}">
+                    <img src="{$vo.thumb}"/></a>
+                    <eq name="product_list" value="1">
+                        <a href="{:U('Product/info',array('id'=>$vo['id']))}" style="font-size:18px;">{$vo.name}</a>
+                    <else/>
+                         <a href="{:U('ProductClass/index',array('id'=>$vo['id']))}" style="font-size:18px;">{$vo.name}</a>
+                    </eq>
+                    
+                </li>
+            </volist>
+        </ul>
+           </div>
+    
+</body>
+</html>
