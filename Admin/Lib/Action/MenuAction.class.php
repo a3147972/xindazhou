@@ -47,21 +47,33 @@ class MenuAction extends BaseAction{
  			'appid'=>C('WEIXIN_OPTIONS.APPID'), //填写高级调用功能的app id
  			'appsecret'=>C('WEIXIN_OPTIONS.APPSECRET') //填写高级调用功能的密钥
 		);
+
 		$wechat = new wechat($options);
 		$model = D('Menu');
-		$list = $model->_list();
+		$list = $model->select();
+		
 		$_list = array();
 		foreach($list as $_k=>$_v){
 			if($_v['pid'] == 0){
 				$_list[$_v['id']]['name'] = $_v['name'];
 			}else{
-				$_list[$_v['pid']]['sub_button'][$_v['id']] = array('name'=>$_v['name'],'type'=>'click','url'=>$_v['url']);
+				$_list[$_v['pid']]['sub_button'][$_v['id']] = array('name'=>$_v['name'],'type'=>'view','url'=>$_v['url']);
 			}
 		}
-		$create_result = $wechat->createMenu($_list);
+		$keys = range(0,2);
+		$_list = array_combine($keys,$_list);
+		foreach($_list as $_k=>$_v){
+			$keys = range(0,count($_v['sub_button'])-1);
+			$_list[$_k]['sub_button'] = array_combine($keys, $_v['sub_button']);
+		}
+		unset($list);
+		$list['button'] = $_list;
+
+		$create_result = $wechat->createMenu($list);
 		if($create_result){
 			$this->success('创建自定义菜单成功,请等待24小时');
 		}else{
+			print_r($wechat->errCode);exit();
 			$this->error('创建失败');
 		}
 	}	

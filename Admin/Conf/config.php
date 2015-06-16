@@ -14,7 +14,7 @@ $admin_config = array(
     	'TOKEN' => 'R8oieC',
     	'ENCODINGAESKEY' => 'TZQdD7KJSYLb7CXqQ3cxzQYfU0MzsbrjalVJuL19xjL',
     	'APPID' => 'wx3f7c564306037c73',
-    	'APPSECRET' => '',
+    	'APPSECRET' => '115b02ef642994f858a0fd2a7870a6e7',
     )
 );
 
