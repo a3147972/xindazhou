@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css" />
   <link rel="stylesheet" href="__PUBLIC__/css/toastr.min.css" />
   <link rel="stylesheet" href="__PUBLIC__/css/style.css" />
+  <link rel="stylesheet" href="__PUBLIC__/css/ui-dialog.css">
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bigWheel.css" />
   <style>
     ul#options li{float: left;width:30%;border:1px solid #000;}
@@ -19,15 +20,15 @@
 </head>
 <body>
   <div class="big_header controllerHtml">
-  <img src="__PUBLIC__/img/content.jpg" class="head_img">
+    <img src="__PUBLIC__/img/content.jpg" class="head_img">
     <div class="zhuanpan_bg">
       <div id="content">{$vo.content}</div>
-        <ul id="options">
-          <volist name="options_list" id="options_vo">
-            <li data-answer="{$i}"><img src="{$options_vo.options}" alt=""></li>
-          </volist>
-          <div class="clr"></div>
-        </ul>
+      <ul id="options">
+        <volist name="options_list" id="options_vo">
+          <li data-answer="{$i}"><img src="{$options_vo.options|getThumbPath}" alt=""></li>
+        </volist>
+        <div class="clr"></div>
+      </ul>
     </div>
   </div>
   <div class="ggk_content ggk_content_dj controllerHtml">
@@ -38,10 +39,10 @@
         </div>
         <div class="bd clearfix">
           <p>
-          <volist name="psize_list" id="psize_vo">
-            {$i}: {$psize_vo.name} ({$psize_vo.people}名)
-            <br />
-          </volist>
+            <volist name="psize_list" id="psize_vo">
+              {$i}: {$psize_vo.name} ({$psize_vo.people}名)
+              <br />
+            </volist>
           </p>
         </div>
       </li>
@@ -56,15 +57,55 @@
     </ul>
   </div>
   <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+  <script src="__PUBLIC__/js/dialog-plus-min.js"></script>
   <script>
-  $('ul#options li').click(function(){
-    $(this).siblings('li').css({
-      'border':'1px solid #000',
+    $('ul#options li').click(function(){
+      $(this).siblings('li').css({
+        'border':'1px solid #000',
+      })
+      $(this).css({
+        'border':'1px solid #fff',
+      })
+      //检测资格
+      $.ajax({
+        url:'{:U("chectStatus")}',
+        data:{},
+        type:'post',
+        dataType:'json',
+        success:function(i){
+          if(i.status == 1){
+            alert('您已参加过此活动');
+            return false;
+          }
+        }
+      })
+      //提交数据
+      var d = dialog({
+        title: '填写资料',
+        content: '手机号：<input type="text" name="mobile" />',
+        okValue: '提交',
+        ok: function () {
+          var mobile = $('[name=mobile]').val();
+          if(mobile == ''){
+            alert('请输入手机号');
+            return false;
+          }
+          var url = '{:U("insert")}';
+          $.ajax({
+            url:url,
+            data:{mobile:mobile},
+            type:'post',
+            dataType:'json',
+            success:function(i){
+                alert(i.info);
+            }
+          })
+        },
+        cancelValue: '取消',
+        cancel: function () {}
+      });
+      d.showModal();
     })
-    $(this).css({
-      'border':'1px solid #fff',
-    })
-  })
   </script>
 </body>
 </html>

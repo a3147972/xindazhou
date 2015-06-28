@@ -16,4 +16,13 @@ class ActivityAction extends BaseAction{
 		$this->assign('psize_list',$psize_list);
 		$this->display();
 	}
+	//检测抽奖资格
+	function checkStatus(){
+
+	}
+
+	//提交抽奖记录
+	function insert(){
+		
+	}
 }
