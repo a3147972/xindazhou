@@ -34,3 +34,16 @@ function ajaxBtn(dom){
 	})
 	return false;
 }
+
+
+function Dialog(dom){
+	var url = $(dom).attr('data-url');
+	var title = $(dom).attr('data-title');
+	var d = dialog({
+	    title: title,
+	    url:url,
+	    cancelValue: '取消',
+    	cancel: function () {}
+	});
+	d.showModal();
+}

@@ -8,7 +8,7 @@ class ProductAction extends BaseAction{
     	$page_size = I('page_size',10);
 
 		$count = $model->_count($map);
-		$list = $model->_list($map);
+		$list = $model->_list($map,$page,$page_size);
 
 		$Page       = new Page($count,$page_size);// 实例化分页类 传入总记录数和每页显示的记录数
         $show       = $Page->show();// 分页显示输出

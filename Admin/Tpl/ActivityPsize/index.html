@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- container-fluid -->
+<head>
+	<title>后台管理系统</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<include file="Base/style" />
+	<link rel="stylesheet" href="PATH_CSS/upload_style"/>
+	<body>
+		<include file="Base/header" />
+		<include file="Base/menu" />
+
+		<div id="content">
+			<div id="content-header">
+				<h1>新大洲微信管理系统</h1>
+
+			</div>
+			<div id="breadcrumb">
+				<a href="{:U('/')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 后台首页</a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="widget-box">
+					<div class="widget-title">
+						<span class="icon">
+							<i class="icon-align-justify"></i>
+						</span>
+						<h5>奖品设置</h5>
+					</div>
+					<div class="widget-content nopadding">
+						<form class="form-horizontal" method="post" action="{:U('insert')}" onSubmit="return ajaxForm(this)">
+							<div class="control-group">
+								<label class="control-label">一等奖</label>
+								<div class="controls">
+									<input type="text" name="name[]" value="{$list.0.name}">
+									<input type="hidden" name="id[]" value="{$list.0.id}">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">中奖人数	</label>
+								<div class="controls">
+									<input type="text" name="people[]" value="{$list.0.people}">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">一等奖奖品</label>
+								<div class="controls">
+									<input type="text" name="thumb[]" value="{$list.0.thumb}">
+									<div id="uploader" class="wu-example">
+										<!--用来存放文件信息-->
+										<div id="thelist" class="uploader-list"></div>
+										<div class="btns">
+											<div id="picker1">选择文件</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">二等奖</label>
+								<div class="controls">
+									<input type="text" name="name[]" value="{$list.1.name}">
+									<input type="hidden" name="id[]" value="{$list.1.id}">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">中奖人数	</label>
+								<div class="controls">
+									<input type="text" name="people[]" value="{$list.1.people}">
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">二等奖奖品</label>
+								<div class="controls">
+									<input type="text" name="thumb[]" value="{$list.1.thumb}">
+									<div id="uploader" class="wu-example">
+										<!--用来存放文件信息-->
+										<div id="thelist" class="uploader-list"></div>
+										<div class="btns">
+											<div id="picker2">选择文件</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">三等奖</label>
+								<div class="controls">
+									<input type="text" name="name[]" value="{$list.2.name}">
+									<input type="hidden" name="id[]" value="{$list.2.id}">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">中奖人数	</label>
+								<div class="controls">
+									<input type="text" name="people[]" value="{$list.1.people}">
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">三等奖奖品</label>
+								<div class="controls">
+									<input type="text" name="thumb[]" value="{$list.2.thumb}">
+									<div id="uploader" class="wu-example">
+										<!--用来存放文件信息-->
+										<div id="thelist" class="uploader-list"></div>
+										<div class="btns">
+											<div id="picker3">选择文件</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-actions">
+							<input type="hidden" name="activity_id" value="{:I('id')}">
+								<input type="submit" class="btn btn-primary" value="提交" >
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Base/script" />
+		<script>
+			function _initialize_webuploader(id){
+				var uploader = WebUploader.create({
+				    // swf文件路径
+				    swf: '__PUBLIC__/webuploader/Uploader.swf',
+				    // 文件接收服务端。
+				    server: '{:U("Base/uploadImg")}',
+				    // 选择文件的按钮。可选。
+				    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+				    pick: id,
+				    // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+				    resize: false,
+				    auto: true,
+
+				    // 只允许选择图片文件。
+				    accept: {
+				    	title: 'Images',
+				    	extensions: 'gif,jpg,jpeg,png',
+				    	mimeTypes: 'image/*'
+				    }
+				});
+
+				uploader.on( 'uploadSuccess', function( file,response) {
+					if(response.status == 1){
+						$(id).parents('div.wu-example').siblings('input[type=text]').val(response.info);
+					}else{
+						alert(response.info);
+					}
+				});
+			}
+			_initialize_webuploader('#picker1');
+			_initialize_webuploader('#picker2');
+			_initialize_webuploader('#picker3');
+		</script>
+	</body>
+	</html>

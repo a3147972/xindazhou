@@ -36,7 +36,7 @@
                 <h5>编辑管理员</h5>
             </div>
             <div class="widget-content nopadding">
-                <form class="form-horizontal" method="post" action="{:U('Admin/insert')}">
+                <form class="form-horizontal" method="post" action="{:U('Admin/insert')}" onSubmit="return ajaxForm(this)">
                     <div class="control-group">
                         <label class="control-label">用户名</label>
                         <div class="controls">
@@ -59,6 +59,6 @@
 
     </div>
 </div>
-
+<include file="Base/script" />
 </body>
 </html>

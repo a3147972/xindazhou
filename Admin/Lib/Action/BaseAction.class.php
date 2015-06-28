@@ -1,20 +1,16 @@
 <?php
 
 class BaseAction extends Action{
-    /**
-     *  自动运行的方法
-     */
     Public function _initialize () {
 
         //判断用户是否已登录
-
         if (!isset($_SESSION['id'])) {
             redirect(U('Login/index'));
         }
     }
 
 	/**
-	 * 默认首页带分页
+	 * 默认首页
 	 */
     function index(){
     	$model = D(MODULE_NAME);
