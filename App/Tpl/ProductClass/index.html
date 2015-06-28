@@ -27,7 +27,7 @@
             <volist name="list" id="vo">
                 <li style="font-size:20px;">
                     <a href="{:U('Product/info',array('id'=>$vo['id']))}">
-                    <img src="{$vo.thumb}"/></a>
+                    <img src="{$vo.thumb|ltrim='.'}"/></a>
                     <eq name="product_list" value="1">
                         <a href="{:U('Product/info',array('id'=>$vo['id']))}" style="font-size:18px;">{$vo.name}</a>
                     <else/>

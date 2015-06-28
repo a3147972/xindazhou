@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>{$vo.name}</title>
+  <link rel="stylesheet" href="__PUBLIC__/bootstrap.min.css" />
+  <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="__PUBLIC__/css/toastr.min.css" />
+  <link rel="stylesheet" href="__PUBLIC__/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bigWheel.css" />
+  <style>
+    ul#options li{float: left;width:30%;border:1px solid #000;}
+    div#content{font-size: 20px;margin-bottom: 30px;color:#fff;line-height: 150%;}
+    div.clr{clear: both;border:none;}
+  </style>
+</head>
+<body>
+  <div class="big_header controllerHtml">
+  <img src="__PUBLIC__/img/content.jpg" class="head_img">
+    <div class="zhuanpan_bg">
+      <div id="content">{$vo.content}</div>
+        <ul id="options">
+          <volist name="options_list" id="options_vo">
+            <li data-answer="{$i}"><img src="{$options_vo.options}" alt=""></li>
+          </volist>
+          <div class="clr"></div>
+        </ul>
+    </div>
+  </div>
+  <div class="ggk_content ggk_content_dj controllerHtml">
+    <ul>
+      <li class="form_item zhuanpan_item">
+        <div class="hd">
+          <h2 class="title">奖项设置</h2>
+        </div>
+        <div class="bd clearfix">
+          <p>
+          <volist name="psize_list" id="psize_vo">
+            {$i}: {$psize_vo.name} ({$psize_vo.people}名)
+            <br />
+          </volist>
+          </p>
+        </div>
+      </li>
+      <li class="rule_item">
+        <div class="hd">
+          <h2 class="title">活动说明</h2>
+        </div>
+        <div class="bd">
+          <p>{:html_entity_decode(C('ACTIVITY_INFO'))}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+  <script>
+  $('ul#options li').click(function(){
+    $(this).siblings('li').css({
+      'border':'1px solid #000',
+    })
+    $(this).css({
+      'border':'1px solid #fff',
+    })
+  })
+  </script>
+</body>
+</html>

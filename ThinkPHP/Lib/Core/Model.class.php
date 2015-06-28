@@ -346,12 +346,14 @@ class Model {
         }
         // 写入数据到数据库
         $result = $this->db->insertAll($dataList,$options,$replace);
+
         if(false !== $result ) {
             $insertId   =   $this->getLastInsID();
             if($insertId) {
                 return $insertId;
             }
         }
+
         return $result;
     }
 
@@ -771,7 +773,6 @@ class Model {
         }elseif(is_object($data)){
             $data   =   get_object_vars($data);
         }
-
         // 验证数据
         if(empty($data) || !is_array($data)) {
             $this->error = L('_DATA_TYPE_INVALID_');
@@ -780,7 +781,7 @@ class Model {
 
         // 检查字段映射
         $data = $this->parseFieldsMap($data,0);
- 
+
         // 状态
         $type = $type?$type:(!empty($data[$this->getPk()])?self::MODEL_UPDATE:self::MODEL_INSERT);
 
@@ -808,7 +809,7 @@ class Model {
 
         // 数据自动验证
         if(!$this->autoValidation($data,$type)) return false;
-  
+
         // 表单令牌验证
         if(!$this->autoCheckToken($data)) {
             $this->error = L('_TOKEN_ERROR_');
@@ -818,7 +819,6 @@ class Model {
         // 验证完成生成数据对象
         if($this->autoCheckFields) { // 开启字段检测 则过滤非法字段数据
             $fields =   $this->getDbFields();
-
             foreach ($data as $key=>$val){
                 if(!in_array($key,$fields)) {
                     unset($data[$key]);
@@ -1321,7 +1321,6 @@ class Model {
      * @return array
      */
     public function getDbFields(){
-
         if(isset($this->options['table'])) {// 动态指定表名
             $fields     =   $this->db->getFields($this->options['table']);
             return  $fields?array_keys($fields):false;

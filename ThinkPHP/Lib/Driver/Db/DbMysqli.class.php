@@ -268,6 +268,7 @@ class DbMysqli extends Db{
      * @return false | integer
      */
     public function insertAll($datas,$options=array(),$replace=false) {
+        
         if(!is_array($datas[0])) return false;
         $fields = array_keys($datas[0]);
         array_walk($fields, array($this, 'parseKey'));

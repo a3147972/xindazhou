@@ -277,7 +277,9 @@ class DbMysql extends Db{
     public function insertAll($datas,$options=array(),$replace=false) {
         if(!is_array($datas[0])) return false;
         $fields = array_keys($datas[0]);
+
         array_walk($fields, array($this, 'parseKey'));
+
         $values  =  array();
         foreach ($datas as $data){
             $value   =  array();
@@ -290,6 +292,7 @@ class DbMysql extends Db{
             $values[]    = '('.implode(',', $value).')';
         }
         $sql   =  ($replace?'REPLACE':'INSERT').' INTO '.$this->parseTable($options['table']).' ('.implode(',', $fields).') VALUES '.implode(',',$values);
+
         return $this->execute($sql);
     }
 
