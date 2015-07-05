@@ -1,3 +1,5 @@
-<?php 
-class DocumentAction extends BaseAction{
+<?php
+class DocumentAction extends BaseAction
+{
+
 }

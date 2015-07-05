@@ -1,4 +1,6 @@
-<?php 
-class ActivityOptionsModel extends BaseModel{
-	
+<?php
+
+class ActivityOptionsModel extends BaseModel
+{
+
 }

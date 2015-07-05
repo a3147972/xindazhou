@@ -1,29 +1,33 @@
-<?php 
-class AddressAction extends BaseAction{
-	function index(){
-		$city_id = I('city_id','');
+<?php
 
-		if(empty($city_id)){
-			$map['pid'] = 0;
-		}else{
-			$map['pid'] = $city_id;
-		}
-		$model = D('City');
-		$list = $model->where($map)->select();
-		$this->assign('list',$list);
+class AddressAction extends BaseAction
+{
+    public function index()
+    {
+        $city_id = I('city_id', '');
 
-		$this->display();
-	}
+        if (empty($city_id)) {
+            $map['pid'] = 0;
+        } else {
+            $map['pid'] = $city_id;
+        }
+        $model = D('City');
+        $list = $model->where($map)->select();
+        $this->assign('list', $list);
 
-	function lists(){
-		$model = D('Address');
+        $this->display();
+    }
 
-		$city_id = I('city_id');
+    public function lists()
+    {
+        $model = D('Address');
 
-		$map['city_id'] = $city_id;
+        $city_id = I('city_id');
 
-		$list = $model->where($map)->select();
-		$this->assign('list',$list);
-		$this->display();
-	}
+        $map['city_id'] = $city_id;
+
+        $list = $model->where($map)->select();
+        $this->assign('list', $list);
+        $this->display();
+    }
 }

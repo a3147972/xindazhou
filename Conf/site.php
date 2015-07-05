@@ -2,5 +2,5 @@
 return array (
   'SITE_URL' => 'http://wx.honda-sundiro.com/',
   'WELCOME_TEXT' => 'http://wx.honda-sundiro.com/',
-  'ACTIVITY_INFO' => '&lt;ul style=&quot;list-style-type: none;&quot; class=&quot; list-paddingleft-2&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;活动时间：&lt;/strong&gt;2014年4月24日-27日，共4天&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;活动规则：&lt;/strong&gt;活动期间内，通过当当购物手机客户端成功购买图书的用户，均视为成功参与此次活动；每个用户只可参与一次。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;活动奖励：&lt;/strong&gt;成功参与此次活动的用户，均可获得10元当当网自营图书音像现金券，此礼券当当网自营图书音像品类通用，无最低消费限制，不可用于其他类商品交易；现金券有效期5月1日-5月31日，礼券不可转让、不可返现。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;奖品发放：&lt;/strong&gt;交易完成后，3个工作日内发送至参与用户账号&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong style=&quot;margin: 0px; padding: 0px;&quot;&gt;补充说明：&lt;/strong&gt;此次活动不与当当网客户端用户首单奖励5元活动冲突，可同时参与。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;此次活动最终解释权归当当网所有。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',
+  'WIN_TEXT' => '恭喜您中奖了',
 );

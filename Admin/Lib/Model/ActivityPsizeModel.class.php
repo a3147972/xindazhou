@@ -1,4 +1,6 @@
-<?php 
-class ActivityPsizeModel extends BaseModel{
-	
+<?php
+
+class ActivityPsizeModel extends BaseModel
+{
+
 }

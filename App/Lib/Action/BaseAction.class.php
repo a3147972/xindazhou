@@ -1,4 +1,6 @@
-<?php 
-class BaseAction extends Action{
-	
+<?php
+
+class BaseAction extends Action
+{
+
 }

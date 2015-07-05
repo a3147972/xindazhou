@@ -1,0 +1,1053 @@
+[ 2015-06-17T14:00:03+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030154s ]
+
+[ 2015-06-17T16:14:13+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+
+[ 2015-06-17T16:14:47+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-06-17T16:15:06+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-06-17T16:16:47+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-06-17T16:17:04+08:00 ] 218.83.245.226 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+
+[ 2015-06-17T16:44:06+08:00 ] 106.120.69.243 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+
+[ 2015-06-17T16:50:13+08:00 ] 106.120.69.243 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-06-17T16:50:15+08:00 ] 106.120.69.243 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-06-17T16:52:03+08:00 ] 106.120.69.243 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+
+[ 2015-06-17T16:52:07+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/unicorn.login.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000751s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:07+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Js/jquery.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000745s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:07+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Js/login.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000741s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:08+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/bootstrap.min.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000753s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:08+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/bootstrap-responsive.min.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:12+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/unicorn.login.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000759s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:52:57+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/unicorn.login.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000688s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:53:43+08:00 ] 106.120.69.243 /Admin/Tpl/Public/Css/unicorn.login.css
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-06-17T16:55:18+08:00 ] 106.120.69.243 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+
+[ 2015-06-17T16:56:15+08:00 ] 106.120.69.243 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-06-17T16:57:14+08:00 ] 101.226.62.16 /index.php?signature=828a324564d44966c69d969649a85a923a7c3f4b&echostr=3049771238546569195&timestamp=1434531434&nonce=2087007547
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-06-17T17:09:26+08:00 ] 106.120.69.243 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+
+[ 2015-06-17T17:09:35+08:00 ] 106.120.69.243 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-06-17T17:17:10+08:00 ] 140.207.54.76 /index.php?signature=8c45a578afc5f593039baf2f96d69e4178f9b00e&timestamp=1434532630&nonce=1883002212
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-06-17T17:18:04+08:00 ] 140.207.54.77 /index.php?signature=5dcb1a78465ee8fce4a2cc00c0a961ebcd1f38e1&timestamp=1434532684&nonce=1187943728
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-06-17T17:18:16+08:00 ] 140.207.54.78 /index.php?signature=e21e9d84851a5198282d80bf515d1350ee5d5d86&timestamp=1434532696&nonce=989775115
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-06-17T17:18:29+08:00 ] 140.207.54.78 /index.php?signature=702c0c9c39f14920786587225434d845ef2573c9&timestamp=1434532709&nonce=674932724
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-06-17T17:25:51+08:00 ] 140.207.54.75 /index.php?signature=1fa9370fb97f10c02f9d0dac5df7e056dec34b76&timestamp=1434533151&nonce=216431090
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+
+[ 2015-06-17T17:25:55+08:00 ] 140.207.54.74 /index.php?signature=4c919fbe8b1973960d2e4a4bc896c1a5cd0e2ed6&timestamp=1434533155&nonce=76995225
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2015-06-17T17:52:49+08:00 ] 140.207.54.74 /index.php?signature=f29cb8e6ffc2caa5acfd92b2b4345e45b6f2f129&timestamp=1434534769&nonce=1841990089
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-06-17T17:55:20+08:00 ] 140.207.54.74 /index.php?signature=3cafa1768acbe4df29a97228f0de3de57f7325bb&timestamp=1434534920&nonce=1215098147
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-06-17T17:57:02+08:00 ] 140.207.54.74 /index.php?signature=20a1b032d34d64ca7cdd52d052a005f97f193689&timestamp=1434535022&nonce=1564611180
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+
+[ 2015-06-17T18:17:44+08:00 ] 140.207.54.74 /index.php?signature=e024b24acc427ebb8750f40befd43f2c0412ebac&timestamp=1434536264&nonce=1609526306
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-06-17T18:23:50+08:00 ] 140.207.54.78 /index.php?signature=6d04b310f5e8c3d6983b525cdc7280f02efa7508&timestamp=1434536630&nonce=41333119
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-06-17T18:53:43+08:00 ] 140.207.54.78 /index.php?signature=f75b64156db07d76253dd9ea71c3f28ba53b2ab1&timestamp=1434538423&nonce=928070594
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-06-17T19:02:47+08:00 ] 140.207.54.75 /index.php?signature=c5d00c19b2034d146130799e5687d1d7dc6d04e9&timestamp=1434538967&nonce=968064387
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-06-17T19:04:25+08:00 ] 140.207.54.76 /index.php?signature=97e2efcf1691cd31411e6dcd5fe1125e3b7b2dcf&timestamp=1434539065&nonce=1335228433
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-06-17T19:12:52+08:00 ] 140.207.54.76 /index.php?signature=86f32182573d7bdec631fb3b4a3fe5e0b9be0e8b&timestamp=1434539572&nonce=242412762
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-06-17T19:14:26+08:00 ] 140.207.54.74 /index.php?signature=1d01a0de92b6093da9e6ee432efae1856c819d5d&timestamp=1434539666&nonce=34712308
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-06-17T19:32:42+08:00 ] 140.207.54.76 /index.php?signature=ce0b97dfa2c1cc23ef70266dd5df91aca9a78c56&timestamp=1434540761&nonce=1529920623
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-06-17T19:53:33+08:00 ] 140.207.54.74 /index.php?signature=9bcb7612b56ce3e5f653c38c16a2142834f5cef2&timestamp=1434542013&nonce=317394639
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-06-17T19:53:43+08:00 ] 140.207.54.75 /index.php?signature=2469cd0101fe6a627342e0287a1fbfaf9e05b389&timestamp=1434542023&nonce=522041657
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-06-17T20:20:30+08:00 ] 140.207.54.74 /index.php?signature=d544ea589ede876415b11dd05cbb0cd3dc3831a2&timestamp=1434543630&nonce=327949940
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+
+[ 2015-06-17T20:21:27+08:00 ] 140.207.54.75 /index.php?signature=4aedd9bf793b78bb7a5850e7c6194fa77510b9bd&timestamp=1434543686&nonce=1656575143
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+
+[ 2015-06-17T20:39:11+08:00 ] 140.207.54.74 /index.php?signature=9c9178395b113b286b9da9f09b20c49ea783bee1&timestamp=1434544751&nonce=1142629401
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-06-17T20:55:55+08:00 ] 140.207.54.80 /index.php?signature=e35e3cc4499cdae4aa039ecbf643af5ce12e4f87&timestamp=1434545754&nonce=1626144515
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-06-17T20:57:50+08:00 ] 140.207.54.74 /index.php?signature=961131d6d51e04b0b96c465b29962ddcc4233b7f&timestamp=1434545870&nonce=1735237798
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+
+[ 2015-06-17T20:59:54+08:00 ] 140.207.54.76 /index.php?signature=f7f0d44af2c3c3e9b5654d4b1134fa0df7f0468a&timestamp=1434545994&nonce=2034216048
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-06-17T21:12:41+08:00 ] 140.207.54.74 /index.php?signature=755a84edcc18d8f02db36a8deb85e39c40285e51&timestamp=1434546761&nonce=1502129103
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-06-17T21:35:07+08:00 ] 140.207.54.74 /index.php?signature=13bc253c5263fdfd9d0232633c528765625cf4bd&timestamp=1434548107&nonce=1434084804
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-06-17T21:35:51+08:00 ] 140.207.54.76 /index.php?signature=531ac69cb95695a427969a8f51cd9cd8620dbd2d&timestamp=1434548151&nonce=83457948
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-06-17T21:37:56+08:00 ] 140.207.54.78 /index.php?signature=962769ed20916f434908c5f90c6793010e109312&timestamp=1434548276&nonce=373983118
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+
+[ 2015-06-17T21:42:05+08:00 ] 140.207.54.74 /index.php?signature=f124c62a4a27af4c24f0bb37bc402c8f09e4c1ec&timestamp=1434548525&nonce=112505700
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-06-17T21:43:34+08:00 ] 140.207.54.76 /index.php?signature=0c25e78e89acdd8c5840d8b4675748172a20098d&timestamp=1434548613&nonce=1774189426
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-06-17T21:44:02+08:00 ] 140.207.54.78 /index.php?signature=ddb5b27d88e758dc4577cdf209b1845466b6bbfe&timestamp=1434548642&nonce=1919051242
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-06-17T21:54:57+08:00 ] 140.207.54.78 /index.php?signature=9f274147c656d1812690d93e9a4fda7e1f8164e9&timestamp=1434549297&nonce=1209814499
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-06-17T21:56:18+08:00 ] 140.207.54.78 /index.php?signature=5e85691da9ebbc04926e6f2a76db8a78fb50d5cd&timestamp=1434549378&nonce=145968761
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-06-17T21:59:08+08:00 ] 140.207.54.80 /index.php?signature=035a0e012df2ca7e0d0294ba5f63b9b2cc1bbc34&timestamp=1434549548&nonce=1600530816
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-06-17T22:00:06+08:00 ] 140.207.54.78 /index.php?signature=647f951e3cb30799f1bc9749d17a214658303f32&timestamp=1434549606&nonce=59995052
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-06-17T22:01:00+08:00 ] 140.207.54.76 /index.php?signature=9d13eb282d3bab01787fb0080b42acae86908000&timestamp=1434549660&nonce=537452981
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-06-17T22:09:17+08:00 ] 140.207.54.79 /index.php?signature=f0d7c5ab3a46c324163f998ad24c1d01d700376c&timestamp=1434550157&nonce=726348249
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-06-17T22:12:25+08:00 ] 140.207.54.76 /index.php?signature=240f8ce18dfd21dfd6a43a5a7c2fd23139f30d22&timestamp=1434550345&nonce=2013819870
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-06-17T22:12:44+08:00 ] 140.207.54.78 /index.php?signature=ac3d83f8ffb2ef4e42cef2f1be7753f9badefefa&timestamp=1434550363&nonce=1900414437
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-06-17T22:12:50+08:00 ] 140.207.54.78 /index.php?signature=25066fb4dc9efc050994939f0007544c82b63682&timestamp=1434550370&nonce=557554829
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-06-17T22:13:22+08:00 ] 140.207.54.76 /index.php?signature=150de92e72642b5f2d05416e1fbd9d67eae7e777&timestamp=1434550402&nonce=616951140
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-06-17T22:15:16+08:00 ] 140.207.54.78 /index.php?signature=22036df551af3e6fe3399f276391d20e064e57cc&timestamp=1434550515&nonce=25178715
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-06-17T22:15:21+08:00 ] 140.207.54.74 /index.php?signature=76a658f7696e0f447cfdb389c6ec255054614d02&timestamp=1434550521&nonce=1419923944
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-06-17T22:15:35+08:00 ] 140.207.54.74 /index.php?signature=8506a4eca095dd389b616449e3263a2b21f6ef51&timestamp=1434550535&nonce=958790396
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+
+[ 2015-06-17T22:16:02+08:00 ] 140.207.54.76 /index.php?signature=c26c30285c83bfbd35cb1f76edfd22d9a226282b&timestamp=1434550562&nonce=713469965
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-06-17T22:16:09+08:00 ] 140.207.54.76 /index.php?signature=1d4641276491b1201f6911399204116d98601d15&timestamp=1434550569&nonce=1994101956
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-06-17T22:16:33+08:00 ] 140.207.54.76 /index.php?signature=1fea24657ed3d41e288e5eaf68795e41ba29dd2e&timestamp=1434550593&nonce=370641361
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-06-17T22:16:55+08:00 ] 140.207.54.76 /index.php?signature=77af5568addc41cca82b4793b3fcc3e56677e810&timestamp=1434550615&nonce=363411578
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-06-17T22:20:19+08:00 ] 140.207.54.74 /index.php?signature=77abbfab152ddf1ca8fe8cae61643918fcc865ff&timestamp=1434550819&nonce=15821391
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-06-17T22:21:03+08:00 ] 140.207.54.76 /index.php?signature=591f2cee797205024938390e0403be4cb179aaa9&timestamp=1434550863&nonce=1233123037
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+
+[ 2015-06-17T22:22:18+08:00 ] 140.207.54.76 /index.php?signature=1e1d8e8bc6e3ca985c117ed1c9d4fedf22ca490a&timestamp=1434550938&nonce=1163020805
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-06-17T22:22:23+08:00 ] 140.207.54.76 /index.php?signature=4221e5aabb8cb7e21e9fa5241a3681d43695ae20&timestamp=1434550943&nonce=346552645
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+
+[ 2015-06-17T22:22:37+08:00 ] 140.207.54.76 /index.php?signature=4b266614b5fa5abb2e6868032dc7cc30d7ec54cf&timestamp=1434550957&nonce=1521416304
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-06-17T22:22:50+08:00 ] 140.207.54.76 /index.php?signature=5f9d763a1c4e25c960988fdd93d7af0eb3931481&timestamp=1434550970&nonce=157997652
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-06-17T22:25:06+08:00 ] 113.46.33.24 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001075s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002343s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.002032s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008858s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000347s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000444s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001608s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-06-17T22:25:07+08:00 ] 113.46.33.24 /index.php/Address/index/city_id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002201s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 1 )  [ RunTime:0.001995s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007783s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000308s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000342s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001431s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000556s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-06-17T22:25:08+08:00 ] 113.46.33.24 /index.php/Address/lists/city_id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002413s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 3 )  [ RunTime:0.001976s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000353s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001498s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000596s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-06-17T22:25:10+08:00 ] 113.46.33.24 /index.php/Address/lists/city_id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000711s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002321s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 2 )  [ RunTime:0.002181s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007482s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000328s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000576s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-06-17T22:25:19+08:00 ] 113.108.80.206 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000694s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002343s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001945s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007979s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000315s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000341s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000218s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001456s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000515s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-06-17T22:25:21+08:00 ] 112.90.11.79 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002188s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001833s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007846s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000322s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000317s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2015-06-17T22:25:29+08:00 ] 110.184.148.155 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002280s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001775s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007818s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000305s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000213s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001390s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000507s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2015-06-17T22:25:38+08:00 ] 110.184.148.155 /index.php/Address/index/city_id/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002430s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 4 )  [ RunTime:0.002005s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007572s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000305s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000313s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-06-17T22:25:40+08:00 ] 110.184.148.155 /index.php/Address/lists/city_id/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002408s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 5 )  [ RunTime:0.002058s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011277s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000497s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002218s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-06-17T22:25:54+08:00 ] 140.207.54.76 /index.php?signature=ab01098a67c6ac36cb271c7d192658a9e0f4711b&timestamp=1434551154&nonce=1689783371
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-06-17T22:26:05+08:00 ] 140.207.54.77 /index.php?signature=4a04dfa2b1182a96edc76f5bc368e75ee36b7fad&timestamp=1434551165&nonce=225902802
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-06-17T22:35:36+08:00 ] 140.207.54.77 /index.php?signature=5dd829557e8841ebe7d446888d3df2bf62e5541e&timestamp=1434551736&nonce=474312117
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-06-17T22:38:02+08:00 ] 140.207.54.76 /index.php?signature=704b2704841d6e1168d14416d5650b240ddee9c1&timestamp=1434551882&nonce=108125975
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-06-17T22:39:13+08:00 ] 180.153.214.176 /index.php/Address/lists/city_id/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002436s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 5 )  [ RunTime:0.003315s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000304s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000216s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-06-17T22:39:15+08:00 ] 112.64.235.254 /index.php/Address/index/city_id/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002335s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 4 )  [ RunTime:0.002013s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007543s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000301s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000326s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2015-06-17T22:39:54+08:00 ] 140.207.54.74 /index.php?signature=e17e50a3db1c8631bf3d2ce787ea5dc224845b80&timestamp=1434551994&nonce=1262348790
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-06-17T22:39:59+08:00 ] 140.207.54.74 /index.php?signature=1efde1160f1d3b110c50dbccc7f819aa8a6d48cd&timestamp=1434551999&nonce=1495500131
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+
+[ 2015-06-17T22:40:07+08:00 ] 140.207.54.74 /index.php?signature=e9de97ea4cbb6669376118fdd4cd4334acc6518c&timestamp=1434552007&nonce=762229211
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-06-17T22:40:13+08:00 ] 140.207.54.74 /index.php?signature=316e0c3ee4fa4a8efa4d756ec113bc4e3d69849d&timestamp=1434552012&nonce=989763480
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-06-17T22:40:19+08:00 ] 140.207.54.74 /index.php?signature=458bbc41543a2e2102007d9e0e0a697f4bcf89cb&timestamp=1434552019&nonce=1796109315
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+
+[ 2015-06-17T22:40:22+08:00 ] 140.207.54.74 /index.php?signature=154bf9166483991f0b6bb143750a8cc77f30667b&timestamp=1434552022&nonce=1080188276
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-06-17T22:46:36+08:00 ] 140.207.54.79 /index.php?signature=47fb11742f0771c82689cd2716fcb376cd6d160f&timestamp=1434552395&nonce=1151781953
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-06-17T22:49:09+08:00 ] 140.207.54.73 /index.php?signature=a9c95bf7e1fd4e054fb67556637645cc2b8f0845&timestamp=1434552549&nonce=1620012513
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-06-17T22:49:14+08:00 ] 140.207.54.75 /index.php?signature=05a36dcf8874b1e5e1a26d9a64c4efadec26d5c8&timestamp=1434552554&nonce=1094924651
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2015-06-17T22:51:09+08:00 ] 223.85.243.154 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002256s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001947s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007837s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000311s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000337s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001494s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-06-17T22:51:09+08:00 ] 223.85.243.154 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002155s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001821s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007596s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000339s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000213s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000540s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-06-17T22:51:09+08:00 ] 223.85.243.154 /Address/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000707s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002222s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 0 )  [ RunTime:0.001766s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000305s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000317s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001429s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-06-17T22:51:28+08:00 ] 223.85.243.154 /index.php/Address/index/city_id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002275s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 1 )  [ RunTime:0.001982s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007939s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000324s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000328s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000516s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2015-06-17T22:51:29+08:00 ] 223.85.243.154 /index.php/Address/lists/city_id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000729s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002490s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 3 )  [ RunTime:0.002139s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007082s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000320s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001436s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-06-17T22:51:39+08:00 ] 140.207.54.74 /index.php?signature=ad322c0d38c3aaf8ec2ddf9ce2dfc0c227d3e659&timestamp=1434552699&nonce=2105911433
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-06-17T22:51:44+08:00 ] 140.207.54.74 /index.php?signature=51154990729af90fcd10a0ce699f66995589615c&timestamp=1434552704&nonce=2011632531
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-06-17T22:51:53+08:00 ] 140.207.54.74 /index.php?signature=40deb88d9cbbf44d68028598309bc6c0f18da564&timestamp=1434552713&nonce=746883424
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2015-06-17T22:54:42+08:00 ] 140.207.54.76 /index.php?signature=5443f6be35281d3ab60f95b43cb5571ea49798c5&timestamp=1434552882&nonce=2052974096
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-06-17T22:54:51+08:00 ] 140.207.54.76 /index.php?signature=d6c94764d7b8faf23bcf64d35b0af42aac89168d&timestamp=1434552891&nonce=46279405
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-06-17T22:55:01+08:00 ] 140.207.54.76 /index.php?signature=c36906559b456ec779a73e8aef3ca3bc1279e885&timestamp=1434552901&nonce=1424582132
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-06-17T22:55:09+08:00 ] 140.207.54.76 /index.php?signature=3a3fb22a77f0dbb1b92fdabd5da8314b1472d624&timestamp=1434552909&nonce=101840660
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-06-17T22:55:43+08:00 ] 140.207.54.76 /index.php?signature=e8e843e52d37e2c8c6c8af70841619fc2b07df54&timestamp=1434552943&nonce=460567421
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-06-17T22:59:56+08:00 ] 140.207.54.74 /index.php?signature=5f8ae5d30f66f28daf6a5266a43dca7fb6e994d9&timestamp=1434553196&nonce=1949282931
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-06-17T23:02:35+08:00 ] 140.207.54.75 /index.php?signature=d45d4d81c0e1711e23ef4dde1abfdc7799dd2deb&timestamp=1434553355&nonce=471932040
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-06-17T23:05:00+08:00 ] 101.226.66.187 /index.php/Address/lists/city_id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `think_address` [ RunTime:0.002409s ]
+SQL: SELECT * FROM `think_address` WHERE ( `city_id` = 3 )  [ RunTime:0.002036s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007657s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000313s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000319s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000680s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-06-17T23:05:00+08:00 ] 180.153.214.178 /index.php/Address/index/city_id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000831s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `think_city` [ RunTime:0.002218s ]
+SQL: SELECT * FROM `think_city` WHERE ( `pid` = 1 )  [ RunTime:0.002071s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008688s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000335s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001461s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000565s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-06-17T23:06:56+08:00 ] 140.207.54.74 /index.php?signature=617ede8e746bc1def2a39d0ef3dd668b61813477&timestamp=1434553616&nonce=1376757482
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+
+[ 2015-06-17T23:15:59+08:00 ] 140.207.54.76 /index.php?signature=9c8d75027833ee602c958deb7de1f0ba524bab94&timestamp=1434554159&nonce=605200321
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-06-17T23:16:08+08:00 ] 140.207.54.76 /index.php?signature=e085a02e36bc3dcb2b1ecf746025ae90c7e1f921&timestamp=1434554168&nonce=1129486756
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-06-17T23:20:27+08:00 ] 140.207.54.76 /index.php?signature=5288fba235e1d69d45d4fffe73491ff9052c082c&timestamp=1434554427&nonce=117595789
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-06-17T23:23:17+08:00 ] 140.207.54.74 /index.php?signature=f61bd0d9b992e22aaa09f0aaddbc8ef5201b1796&timestamp=1434554597&nonce=1788337111
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-06-17T23:23:28+08:00 ] 140.207.54.74 /index.php?signature=fd94846b2677362699ff0e7e4b8cc16c8347fdfb&timestamp=1434554608&nonce=1360578139
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-06-17T23:32:57+08:00 ] 140.207.54.74 /index.php?signature=1feb31cff87a9dd63efa0b990b9cc74859a6c3a9&timestamp=1434555177&nonce=875823029
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-06-17T23:36:27+08:00 ] 140.207.54.74 /index.php?signature=cd6c2d5be3e4151aa509a533e69c553dbb047c56&timestamp=1434555387&nonce=1909072988
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+
+[ 2015-06-17T23:36:40+08:00 ] 140.207.54.74 /index.php?signature=cd8ce640b4fe0d7f9830fb632a410fef6d86cbf1&timestamp=1434555400&nonce=2034109200
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+
+[ 2015-06-17T23:37:10+08:00 ] 140.207.54.74 /index.php?signature=ab417c479596248146bf7c4a1299beaec8ab6306&timestamp=1434555430&nonce=1173113952
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+
+[ 2015-06-17T23:38:40+08:00 ] 140.207.54.78 /index.php?signature=0f72df97a261653a71fba53b989f114e4ac06ef6&timestamp=1434555520&nonce=440591891
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-06-17T23:39:24+08:00 ] 140.207.54.76 /index.php?signature=29eee0d3e40196ceb00295479628ee02ea7152d5&timestamp=1434555564&nonce=1229490099
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-06-17T23:39:29+08:00 ] 140.207.54.77 /index.php?signature=fc604f960ec86cb02103ec0b7dd76ceb81a27fa3&timestamp=1434555569&nonce=1655701917
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+
+[ 2015-06-17T23:39:39+08:00 ] 140.207.54.76 /index.php?signature=91bdf3962625ca403a22734608b69d78f58d4c03&timestamp=1434555578&nonce=1715694921
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-06-17T23:44:07+08:00 ] 140.207.54.76 /index.php?signature=889ed5ccb00aa4fbf3c1946c60442233e2cf38ad&timestamp=1434555847&nonce=2124058138
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-06-17T23:45:46+08:00 ] 140.207.54.74 /index.php?signature=a536bbcf11ecc343de4fe5f54a86d8c74b1cc578&timestamp=1434555946&nonce=158344139
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-06-17T23:48:43+08:00 ] 140.207.54.76 /index.php?signature=8fd972f7714171d339bf598e893c5a54ac89f361&timestamp=1434556123&nonce=1163224874
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-06-17T23:49:00+08:00 ] 140.207.54.76 /index.php?signature=31c4d080754790680fa030233a3109f2e1b391ef&timestamp=1434556140&nonce=1123321010
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2015-06-17T23:49:10+08:00 ] 140.207.54.76 /index.php?signature=fbb89e84f6eb54026d31cbc693771da2d4e29d80&timestamp=1434556151&nonce=1442415932
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-06-17T23:49:19+08:00 ] 140.207.54.76 /index.php?signature=7458614054467a4b6acf63f1742238c8a4c2faf3&timestamp=1434556159&nonce=1758062177
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-06-17T23:55:13+08:00 ] 140.207.54.73 /index.php?signature=e5956e83868bdeea6ed554f7b453f86eea8900e2&timestamp=1434556513&nonce=313329375
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-06-17T23:57:05+08:00 ] 140.207.54.78 /index.php?signature=99395dfde3bb3359209d72d1783e1161a892017b&timestamp=1434556625&nonce=286917412
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-06-17T23:57:25+08:00 ] 140.207.54.78 /index.php?signature=c594d4705b5db61d4d8469f8236fc9bd3ed34db9&timestamp=1434556645&nonce=1440077168
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-06-17T23:59:57+08:00 ] 140.207.54.78 /index.php?signature=66b5eb964e0c3369a45879717976d5790dc0ddb8&timestamp=1434556797&nonce=1625605503
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+

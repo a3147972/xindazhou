@@ -2,110 +2,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>{$vo.name}</title>
-  <link rel="stylesheet" href="__PUBLIC__/bootstrap.min.css" />
-  <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="__PUBLIC__/css/toastr.min.css" />
-  <link rel="stylesheet" href="__PUBLIC__/css/style.css" />
-  <link rel="stylesheet" href="__PUBLIC__/css/ui-dialog.css">
-  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bigWheel.css" />
-  <style>
-    ul#options li{float: left;width:30%;border:1px solid #000;}
-    div#content{font-size: 20px;margin-bottom: 30px;color:#fff;line-height: 150%;}
-    div.clr{clear: both;border:none;}
-  </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>{$vo.name}</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/style.css" />
+    <link rel="stylesheet" href="__PUBLIC__/css/ui-dialog.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bigWheel.css" />
 </head>
 <body>
-  <div class="big_header controllerHtml">
-    <img src="__PUBLIC__/img/content.jpg" class="head_img">
-    <div class="zhuanpan_bg">
-      <div id="content">{$vo.content}</div>
-      <ul id="options">
-        <volist name="options_list" id="options_vo">
-          <li data-answer="{$i}"><img src="{$options_vo.options|getThumbPath}" alt=""></li>
-        </volist>
-        <div class="clr"></div>
-      </ul>
-    </div>
-  </div>
-  <div class="ggk_content ggk_content_dj controllerHtml">
-    <ul>
-      <li class="form_item zhuanpan_item">
-        <div class="hd">
-          <h2 class="title">奖项设置</h2>
+    <div class="content">
+        <p class="question">{$vo.content}</p>
+        <div class="answer">
+            <ul>
+                <volist name="options_list" id="options_vo">
+                    <li value="{$i}"><img src="{$options_vo.options|getThumbPath}" alt="" class="blank"></li>
+                </volist>
+                <div class="clr"></div>
+            </ul>
         </div>
-        <div class="bd clearfix">
-          <p>
-            <volist name="psize_list" id="psize_vo">
-              {$i}: {$psize_vo.name} ({$psize_vo.people}名)
-              <br />
-            </volist>
-          </p>
+        <div class="form">
+            <form action="{:U('insert')}" method="post" onsubmit="return AjaxForm(this)">
+                <div class="form-contor">
+                    <input type="text" name="mobile" id="" placeholder="手机号">
+                </div>
+                <div class="form-contor">
+                    <input type="hidden" name="activity_id" value="{$vo.id}">
+                    <input type="hidden" name="openid" value="{:I('openid')}">
+                    <input type="submit" value="提&nbsp;&nbsp;交">
+                </div>
+            </form>
         </div>
-      </li>
-      <li class="rule_item">
-        <div class="hd">
-          <h2 class="title">活动说明</h2>
+        <div class="psize">
+            <p class="title">活动奖品</p>
+            <ul>
+                <li>1. 摩托车使用权1年（1个）</li>
+                <li>2. 摩托车使用权1年（2个）</li>
+                <li>3. 摩托车使用权1年（3个）</li>
+            </ul>
         </div>
-        <div class="bd">
-          <p>{:html_entity_decode(C('ACTIVITY_INFO'))}</p>
+        <div class="guize">
+            <p class="title">活动规则</p>
+            <p class="c">
+                {$vo.rule}
+            </p>
         </div>
-      </li>
-    </ul>
-  </div>
-  <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
-  <script src="__PUBLIC__/js/dialog-plus-min.js"></script>
-  <script>
-    $('ul#options li').click(function(){
-      $(this).siblings('li').css({
-        'border':'1px solid #000',
-      })
-      $(this).css({
-        'border':'1px solid #fff',
-      })
-      //检测资格
-      $.ajax({
-        url:'{:U("chectStatus")}',
-        data:{},
-        type:'post',
-        dataType:'json',
-        success:function(i){
-          if(i.status == 1){
-            alert('您已参加过此活动');
-            return false;
-          }
-        }
-      })
-      //提交数据
-      var d = dialog({
-        title: '填写资料',
-        content: '手机号：<input type="text" name="mobile" />',
-        okValue: '提交',
-        ok: function () {
-          var mobile = $('[name=mobile]').val();
-          if(mobile == ''){
-            alert('请输入手机号');
-            return false;
-          }
-          var url = '{:U("insert")}';
-          $.ajax({
-            url:url,
-            data:{mobile:mobile},
-            type:'post',
-            dataType:'json',
-            success:function(i){
-                alert(i.info);
+        <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+        <script src="__PUBLIC__/js/dialog-plus-min.js"></script>
+        <script>
+            $('div.answer ul li').click(function(){
+                var p = '<p style="background:#000;position:absolute;margin-top:-103px;height:102px;width:30%;opacity:0.7"></p>';
+                $('div.answer ul li p').remove();
+                $('div.answer ul li').removeAttr('checked');
+                $(this).attr('checked','checked');
+                $(this).siblings('li').append(p);
+            })
+
+            function AjaxForm(dom){
+                var mobile = $('[name=mobile').val();
+                var check_val = $('div.answer ul li[checked=checked]').val();
+                var activity_id = $('[name=activity_id]').val();
+                var openid = $('[name=openid]').val();
+                var url = $(dom).attr('action');
+                if(check_val == '' || check_val == undefined){
+                    alert('请先选择答案');
+                    return false;
+                }
+                if(mobile == ''){
+                    alert('请输入手机号');
+                    return false;
+                }
+
+                $.ajax({
+                    url:url,
+                    data:{
+                        mobile:mobile,
+                        openid:openid,
+                        activity_id:activity_id,
+                        answer:check_val
+                    },
+                    type:'post',
+                    dataType:'json',
+                    success:function(i){
+                        alert(i.info);
+                        // window.close();
+                    }
+                })
+
+                return false;
             }
-          })
-        },
-        cancelValue: '取消',
-        cancel: function () {}
-      });
-      d.showModal();
-    })
-  </script>
-</body>
-</html>
+        </script>
+    </body>
+    </html>

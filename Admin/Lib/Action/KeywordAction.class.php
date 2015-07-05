@@ -1,4 +1,6 @@
-<?php 
-class KeywordAction extends BaseAction{
-	
+<?php
+
+class KeywordAction extends BaseAction
+{
+    
 }

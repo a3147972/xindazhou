@@ -1,13 +1,16 @@
-<?php 
-class ProductAction extends BaseAction{
-	function info(){
-		$id = I('id');
+<?php
 
-		$map['id'] = $id;
+class ProductAction extends BaseAction
+{
+    public function info()
+    {
+        $id = I('id');
 
-		$info = D('Product')->where($map)->find();
+        $map['id'] = $id;
 
-		$this->assign('vo',$info);
-		$this->display();
-	}
+        $info = D('Product')->where($map)->find();
+
+        $this->assign('vo', $info);
+        $this->display();
+    }
 }

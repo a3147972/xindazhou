@@ -1,4 +1,6 @@
-<?php 
-class JoinerAction extends BaseAction{
-	
+<?php
+
+class JoinerAction extends BaseAction
+{
+
 }

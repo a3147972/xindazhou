@@ -26,7 +26,7 @@
         <ul class="site_list">
             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li style="font-size:20px;">
                     <a href="<?php echo U('Product/info',array('id'=>$vo['id']));?>">
-                    <img src="<?php echo ($vo["thumb"]); ?>"/></a>
+                    <img src="<?php echo (ltrim($vo["thumb"],'.')); ?>"/></a>
                     <?php if(($product_list) == "1"): ?><a href="<?php echo U('Product/info',array('id'=>$vo['id']));?>" style="font-size:18px;"><?php echo ($vo["name"]); ?></a>
                     <?php else: ?>
                          <a href="<?php echo U('ProductClass/index',array('id'=>$vo['id']));?>" style="font-size:18px;"><?php echo ($vo["name"]); ?></a><?php endif; ?>

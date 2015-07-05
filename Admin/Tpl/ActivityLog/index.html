@@ -38,8 +38,6 @@
 									<th>微信ID</th>
 									<th>手机号</th>
 									<th>奖项</th>
-									<th>奖品图片</th>
-									<th>选项图片</th>
 									<th>抽奖时间</th>
 								</tr>
 							</thead>
@@ -50,8 +48,6 @@
 										<td>{$vo.openid}</td>
 										<td>{$vo.mobile}</td>
 										<td>{$vo.psize_name}</td>
-										<td><img src="{$vo.psize_thumb|getThumbPath}" width="100" alt=""></td>
-										<td><img src="{$vo.options|getThumbPath}" width="100" alt=""></td>
 										<td>{$vo.create_time}</td>
 									</tr>
 								</volist>

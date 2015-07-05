@@ -2,102 +2,105 @@
 <html lang="en">
 <!-- container-fluid -->
 <head>
-	<title>后台管理系统</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-	<include file="Base/style" />
-	<link rel="stylesheet" href="PATH_CSS/upload_style"/>
-	<body>
-		<include file="Base/header" />
-		<include file="Base/menu" />
+    <title>后台管理系统</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <include file="Base/style" />
+    <link rel="stylesheet" href="PATH_CSS/upload_style"/>
+    <body>
+        <include file="Base/header" />
+        <include file="Base/menu" />
 
-		<div id="content">
-			<div id="content-header">
-				<h1>新大洲微信管理系统</h1>
+        <div id="content">
+            <div id="content-header">
+                <h1>新大洲微信管理系统</h1>
 
-			</div>
-			<div id="breadcrumb">
-				<a href="{:U('/')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 后台首页</a>
-			</div>
-			<div class="container-fluid">
+            </div>
+            <div id="breadcrumb">
+                <a href="{:U('/')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 后台首页</a>
+            </div>
+            <div class="container-fluid">
 
-				<div class="widget-box">
-					<div class="widget-title">
-						<span class="icon">
-						 <i class="icon-align-justify"></i>
-					 </span>
-					 <h5>新增活动</h5>
-				 </div>
-				 <div class="widget-content nopadding">
-					<form class="form-horizontal" method="post" action="{:U('insert')}" onSubmit="return ajaxForm(this)">
-						<div class="control-group">
-							<label class="control-label">活动名称</label>
-							<div class="controls">
-								<input type="text" name="name">
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label">活动描述</label>
-							<div class="controls">
-								<textarea name="content" id="ueditor" cols="30" rows="5"></textarea>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label">正确答案</label>
-							<div class="controls">
-								<select name="answer" id="">
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-								</select>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label">答案选项</label>
-							<div class="controls">
-								<p>第一张图片为答案1,第二张图片为答案二,以此类推</p>
-								<div id="container">
-									<!--头部，相册选择和格式选择-->
-									<div id="uploader">
-										<div class="queueList">
-											<div id="dndArea" class="placeholder">
-												<div id="filePicker"></div>
-												<p>或将照片拖到这里，单次最多可选300张</p>
-											</div>
-										</div>
-										<div class="statusBar" style="display:none;">
-											<div class="progress">
-												<span class="text">0%</span>
-												<span class="percentage"></span>
-											</div><div class="info"></div>
-											<div class="btns">
-												<div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
-											</div>
-										</div>
-									</div>
-									<input type="hidden" name="options" value="">
-								</div>
-							</div>
-						</div>
-						<div class="form-actions">
-							<input type="submit" class="btn btn-primary" value="提交" >
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-<include file="Base/script" />
-<script>
-	var Upload_Path = '{:U("Base/uploadImg")}';
-</script>
-<script src="PATH_JS/webuploader.js"></script>
-</body>
-</html>
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon">
+                            <i class="icon-align-justify"></i>
+                        </span>
+                        <h5>新增活动</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form class="form-horizontal" method="post" action="{:U('insert')}" onSubmit="return ajaxForm(this)">
+                            <div class="control-group">
+                                <label class="control-label">活动名称</label>
+                                <div class="controls">
+                                    <input type="text" name="name">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">活动问题</label>
+                                <div class="controls">
+                                    <input type="text" name="content">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">活动规则</label>
+                                <div class="controls">
+                                    <textarea name="rule" id="ueditor1" cols="30" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">正确答案</label>
+                                <div class="controls">
+                                    <select name="answer" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">答案选项</label>
+                                <div class="controls">
+                                    <p>第一张图片为答案1,第二张图片为答案二,以此类推</p>
+                                    <div id="container">
+                                        <!--头部，相册选择和格式选择-->
+                                        <div id="uploader">
+                                            <div class="queueList">
+                                                <div id="dndArea" class="placeholder">
+                                                    <div id="filePicker"></div>
+                                                    <p>或将照片拖到这里，单次最多可选300张</p>
+                                                </div>
+                                            </div>
+                                            <div class="statusBar" style="display:none;">
+                                                <div class="progress">
+                                                    <span class="text">0%</span>
+                                                    <span class="percentage"></span>
+                                                </div><div class="info"></div>
+                                                <div class="btns">
+                                                    <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="options" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <input type="submit" class="btn btn-primary" value="提交" >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file="Base/script" />
+        <script>
+            var Upload_Path = '{:U("Base/uploadImg")}';
+        </script>
+        <script src="PATH_JS/webuploader.js"></script>
+    </body>
+    </html>

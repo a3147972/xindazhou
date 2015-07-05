@@ -1,16 +1,18 @@
-<?php 
-class DocumentAction extends BaseAction{
-	function index(){
-		$id = I('get.id');
+<?php
+class DocumentAction extends BaseAction
+{
+    public function index()
+    {
+        $id = I('get.id');
 
-		$model = D('Document');
+        $model = D('Document');
 
-		$map['id'] = $id;
+        $map['id'] = $id;
 
-		$info = $model->where($map)->find();
+        $info = $model->where($map)->find();
 
-		$this->assign('vo',$info);
+        $this->assign('vo', $info);
 
-		$this->display();
-	}
+        $this->display();
+    }
 }
