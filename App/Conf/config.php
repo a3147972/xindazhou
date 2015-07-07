@@ -11,7 +11,8 @@ $admin_config = array(
     	'ENCODINGAESKEY' => 'TZQdD7KJSYLb7CXqQ3cxzQYfU0MzsbrjalVJuL19xjL',
     	'APPID' => 'wx3f7c564306037c73',
     	'APPSECRET' => '115b02ef642994f858a0fd2a7870a6e7',
-    )
+    ),
+    'VERSION'=>'20150706001'
 );
 
 return array_merge($common,$admin_config);

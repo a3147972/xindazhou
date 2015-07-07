@@ -12,12 +12,6 @@ class ActivityAction extends BaseAction
         
         $info = $model->order('id desc')->find();
 
-        if (!$info) {
-            $this->alertError('活动还未开始');
-        }
-        if (!$this->checkStatus($openid, $info['id'])) {
-            $this->alertError('您已参加过活动,请等待开奖');
-        }
         $this->assign('vo', $info);
         //获取选项
         $options_map['activity_id'] = $info['id'];
@@ -31,8 +25,10 @@ class ActivityAction extends BaseAction
     }
     
     //检测抽奖资格
-    public function checkStatus($openid, $activity_id)
+    public function checkStatus()
     {
+        $openid = I('openid');
+        $activity_id = I('activity_id');
         $model = D('Joiner');
 
         $map['openid'] = $openid;
@@ -41,9 +37,9 @@ class ActivityAction extends BaseAction
         $info = $model->where($map)->find();
         //已参加过活动
         if ($info) {
-            return false;
+            $this->error('您已参与，7月20日将公布中奖信息，敬请期待！');
         }
-        return true;
+        $this->success(1);
     }
 
     //提交抽奖记录
@@ -84,7 +80,7 @@ class ActivityAction extends BaseAction
 
         if ($ins && $log_inster) {
             $model->commit();
-            $this->success('您已成功参加抽奖');
+            $this->success('提交成功，感谢您参与活动，7月20日将公布中奖信息，敬请期待！');
         } else {
             $model->rollback();
             $this->error('系统错误,请稍后再试');
@@ -93,7 +89,7 @@ class ActivityAction extends BaseAction
 
     private function alertError($error)
     {
-        $str = '<script>alert("'.$error.'");window.close();</script>';
+        $str = '<script>alert("'.$error.'");WeixinJSBridge.call("closeWindow");</script>';
         die($str);
     }
 }

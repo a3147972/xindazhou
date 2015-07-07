@@ -55,7 +55,7 @@ class MenuAction extends BaseAction
             'appsecret'=>C('WEIXIN_OPTIONS.APPSECRET') //填写高级调用功能的密钥
         );
 
-        $wechat = new wechat($options);
+        $wechat = new Wechat($options);
         $model = D('Menu');
         $list = $model->select();
         
@@ -67,12 +67,19 @@ class MenuAction extends BaseAction
                 $_list[$_v['pid']]['sub_button'][$_v['id']] = array('name'=>$_v['name'],'type'=>'view','url'=>$_v['url']);
             }
         }
+        //猜新车   临时方案
+        $_tmp['name'] = '猜新车';
+        $_tmp['type'] = 'click';
+        $_tmp['key'] = '猜新车';
+        array_unshift($_list[6]['sub_button'], $_tmp);
+
         $keys = range(0, 2);
         $_list = array_combine($keys, $_list);
         foreach ($_list as $_k => $_v) {
             $keys = range(0, count($_v['sub_button'])-1);
             $_list[$_k]['sub_button'] = array_combine($keys, $_v['sub_button']);
         }
+
         unset($list);
         $list['button'] = $_list;
 

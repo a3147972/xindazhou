@@ -21,6 +21,7 @@ class ActivityPsizeAction extends BaseAction
         $thumb = array_filter(I('post.thumb'));
         $people = array_filter(I('post.people'));
         $activity_id = I('post.activity_id');
+        $prize = array_filter(I('post.prize'));
         $id = array_filter(I('post.id'));
         if (empty($name)) {
             $this->error('至少设置一个奖项');
@@ -34,6 +35,7 @@ class ActivityPsizeAction extends BaseAction
             $_data['id'] = isset($id[$_k]) ? $id[$_k] : null;
             $_data['activity_id'] = $activity_id;
             $_data['name'] = $_v;
+            $_data['prize'] = isset($prize[$_k]) ? $prize[$_k] : null;
             $_data['thumb'] = $thumb[$_k];
             $_data['people'] = isset($people[$_k])?$people[$_k]:1;
             $_data['create_time'] = now();

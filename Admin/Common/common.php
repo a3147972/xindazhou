@@ -13,7 +13,7 @@ function getThumbPath($path)
 if (!function_exists('array_column')) {
     function array_column(array $array, $column_key, $index_key = null)
     {
-        $result = [];
+        $result = array();
         foreach ($array as $arr) {
             if (!is_array($arr)) {
                 continue;

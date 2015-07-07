@@ -9,11 +9,16 @@
 </title><br>
 <link type="text/css" href="__PUBLIC__/css/style.css" rel="stylesheet" /></head>
 <style type="text/css">
+.site_list{
+    margin: 0 auto;
+    width:90%;
+}
 .site_list li a, .netWork_list li a{
-	padding: 0 0;
+    padding: 0 0;
 }
 .site_list li, .netWork_list li {
-	width: 45%;
+    width: 50%;
+    text-align: center;
 }
 </style>
 <body>
@@ -30,8 +35,8 @@
                     <?php if(($product_list) == "1"): ?><a href="<?php echo U('Product/info',array('id'=>$vo['id']));?>" style="font-size:18px;"><?php echo ($vo["name"]); ?></a>
                     <?php else: ?>
                          <a href="<?php echo U('ProductClass/index',array('id'=>$vo['id']));?>" style="font-size:18px;"><?php echo ($vo["name"]); ?></a><?php endif; ?>
-                    
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <div class="clr"></div>
         </ul>
            </div>
     

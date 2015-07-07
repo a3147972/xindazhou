@@ -9,11 +9,16 @@
 </title><br>
 <link type="text/css" href="__PUBLIC__/css/style.css" rel="stylesheet" /></head>
 <style type="text/css">
+.site_list{
+    margin: 0 auto;
+    width:90%;
+}
 .site_list li a, .netWork_list li a{
-	padding: 0 0;
+    padding: 0 0;
 }
 .site_list li, .netWork_list li {
-	width: 45%;
+    width: 50%;
+    text-align: center;
 }
 </style>
 <body>
@@ -33,9 +38,10 @@
                     <else/>
                          <a href="{:U('ProductClass/index',array('id'=>$vo['id']))}" style="font-size:18px;">{$vo.name}</a>
                     </eq>
-                    
                 </li>
+                
             </volist>
+            <div class="clr"></div>
         </ul>
            </div>
     
